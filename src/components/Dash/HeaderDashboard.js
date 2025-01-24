@@ -35,11 +35,11 @@ function HeaderDashboard() {
 
         {/* Navigation Section */}
         <Flex alignItems="center" gap={4}>
-          <Button variant="ghost" onClick={() => navigate("/creators")}>
-            Creators
+          <Button variant="ghost" onClick={() => navigate("/users")}>
+            {/* Creators
           </Button>
-          <Button variant="ghost" onClick={() => navigate("/viewers")}>
-            Viewers
+          <Button variant="ghost" onClick={() => navigate("/viewers")}> */}
+            Users
           </Button>
           <Button variant="ghost" onClick={() => navigate("/customer")}>
             Customers

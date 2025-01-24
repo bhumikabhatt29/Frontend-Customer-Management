@@ -6,7 +6,7 @@ import { Route, Routes } from "react-router-dom";
 import Index from "./pages/IndexPage";
 import Profile from "./pages/Profile";
 import Customer from "./pages/Customer";
-import Creators from "./pages/Creators";
+import Users from "./pages/Users";
 import Viewers from "./pages/Viewers";
 import CustomerButton from "./pages/CustomerButton";
 function App() {
@@ -19,8 +19,8 @@ function App() {
         <Route path="/profile" Component={Profile } />
         {/* <Route path="/customer" Component={Customer } /> */}
         <Route path="/customer/:segmentId" element={<CustomerButton />} />
-        <Route path="/creator" Component={Creators} />
-        <Route path="/viewer" Component={Viewers } />
+        <Route path="/users" Component={Users} />
+        {/* <Route path="/viewer" Component={Viewers } /> */}
         <Route path="/customer" Component={Customer}/>
       </Routes>
     </div>

@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import HeaderDashboard from "../components/Dash/HeaderDashboard";
 import {
   Box,
   Table,
@@ -49,6 +50,8 @@ function Customer() {
   };
 
   return (
+    <Box minH="100vh" bg="background">
+      <HeaderDashboard />
     <Box border="1px solid" borderColor="gray.200" borderRadius="md" p={4}>
       <Table variant="simple">
         <Thead>
@@ -96,6 +99,7 @@ function Customer() {
           </ModalBody>
         </ModalContent>
       </Modal>
+    </Box>
     </Box>
   );
 }

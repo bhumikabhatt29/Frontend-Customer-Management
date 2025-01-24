@@ -13,6 +13,7 @@ import {
   Divider,
   useToast,
 } from "@chakra-ui/react";
+import HeaderDashboard from "../components/Dash/HeaderDashboard";
 
 function Profile() {
   const [isEditing, setIsEditing] = useState(false);
@@ -37,10 +38,12 @@ function Profile() {
   };
 
   return (
+    <Box minH="90vh" bg="background">
+      <HeaderDashboard />
     <Box
       maxW="lg"
       mx="auto"
-      p={6}
+      p={4}
       bg="white"
       borderRadius="lg"
       boxShadow="lg"
@@ -54,8 +57,8 @@ function Profile() {
           </Heading>
         </CardHeader>
         <CardBody>
-          <Stack spacing={5}>
-            <Stack spacing={2}>
+          <Stack spacing={2.5}>
+            <Stack spacing={1.5}>
               <FormLabel htmlFor="user-id" fontSize="sm" color="gray.500">
                 User ID
               </FormLabel>
@@ -67,7 +70,7 @@ function Profile() {
                 _disabled={{ bg: "gray.100" }}
               />
             </Stack>
-            <Stack spacing={2}>
+            <Stack spacing={1}>
               <FormLabel htmlFor="name" fontSize="sm" color="gray.500">
                 Name
               </FormLabel>
@@ -123,6 +126,7 @@ function Profile() {
           </Stack>
         </CardBody>
       </Card>
+    </Box>
     </Box>
   );
 }
