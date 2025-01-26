@@ -29,16 +29,19 @@ function HeaderDashboard() {
         px={4}
       >
         {/* Logo Section */}
-        <Heading as="h1" size="lg" fontWeight="bold">
+        <Heading
+          as="h1"
+          size="lg"
+          fontWeight="bold"
+          cursor="pointer"
+          onClick={() => navigate("/")}
+        >
           UserPro
         </Heading>
 
         {/* Navigation Section */}
         <Flex alignItems="center" gap={4}>
           <Button variant="ghost" onClick={() => navigate("/users")}>
-            {/* Creators
-          </Button>
-          <Button variant="ghost" onClick={() => navigate("/viewers")}> */}
             Users
           </Button>
           <Button variant="ghost" onClick={() => navigate("/customer")}>
@@ -51,7 +54,9 @@ function HeaderDashboard() {
               My Account
             </MenuButton>
             <MenuList>
-              <MenuItem onClick={() => navigate("/profile")}>My Profile</MenuItem>
+              <MenuItem onClick={() => navigate("/profile")}>
+                My Profile
+              </MenuItem>
               <MenuItem onClick={() => navigate("/")}>Logout</MenuItem>
             </MenuList>
           </Menu>
