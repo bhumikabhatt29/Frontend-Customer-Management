@@ -1,7 +1,7 @@
 import { Button, Input, FormControl, FormLabel, Box } from "@chakra-ui/react";
 import { useState } from "react";
 
-export function CustomerEditForm({ customer }) {
+export default function CustomerEditForm({ customer }) {
   const [formData, setFormData] = useState({
     name: "",
     age: "",
